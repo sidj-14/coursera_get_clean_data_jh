@@ -44,5 +44,5 @@ The script has comments for easier understanding of how the code works. The flow
 19. To get the data for **STEP 5** firstly the script groups the tidy data set from **STEP 4** on a combined set of **subject_id** and **activity_label**. 
 20. Then using the **summarize_each()** function from the **dplyr** library the mean of all the values lying under each group made above.
 21. Script now writes the resulting data set in a properly formatted txt file in the current working directory. In the end script removes all the variables in the working space to make it clean.
-22.  Both the txt files could be read using the command **read.csv(“file name”, header=TRUE)**
+22.  Both the txt files could be read using the command **read.csv(“finalMeanData.txt”, header=TRUE)**
 
