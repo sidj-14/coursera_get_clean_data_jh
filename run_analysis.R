@@ -98,8 +98,8 @@ mean_std_extraction <- grep("(mean|std)", featuresNames)
 ## Creating the final data set required in step 4
 mean_std_data_set <- newDataSet[,c(subject_id_index,activity_label_index,mean_std_extraction)]
 
-## saving the individual observation as csv file
-write.table(mean_std_data_set,file="finalEachObservationData.csv", row.names=FALSE) 
+## saving the individual observation as txt file
+write.table(mean_std_data_set,file="finalEachObservationData.txt", row.names=FALSE) 
 
 ## Changing the column names to the new names with prefix "subject_activity_measure_of_"
 names_temp <- names(mean_std_data_set)
@@ -114,8 +114,8 @@ group_data_mean <- summarize_each(grouped_data,funs(mean))
 ## Turning it into a data frame
 grouped_data_mean_df <- as.data.frame(group_data_mean)
 
-## Writing the setp 5 dataset into a csv file
-write.table(grouped_data_mean_df,file="finalMeanData.csv", row.names=FALSE) 
+## Writing the setp 5 dataset into a txt file
+write.table(grouped_data_mean_df,file="finalMeanData.txt", row.names=FALSE) 
 
 
 ## Removing all the variables

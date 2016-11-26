@@ -39,10 +39,10 @@ The script has comments for easier understanding of how the code works. The flow
 14. Using **rbind()** we create the new data set asked for in the step 4 of the assignment but without the column names specified. 
 15. The names extracted in the variable **featuresNames** described in point 7 along with names for the **subject id** and **activity description** is also put in. 
 16. Now the script uses the grep command to get the index for subject_id column and activity label column from the vector given by **names()** function and the indices for the rows which have either *mean* or *std* in their name using the **grep()** command from the variable named **featuresNames** (This works as the observations in each raw data set is related to each other in the order they have been entered in.). These are stored in three different vectors which are later used to get the required data set asked for in **STEP 4** of the assignment.
-17. Script now writes the result in a properly formatted csv file in the current working directory.
+17. Script now writes the result in a properly formatted txt file in the current working directory.
 18. Now the script changes the name of the variables in the data set and adds the prefix **subject_activity_measure_of** as this is what is required in **STEP 5** of the assignment. 
 19. To get the data for **STEP 5** firstly the script groups the tidy data set from **STEP 4** on a combined set of **subject_id** and **activity_label**. 
 20. Then using the **summarize_each()** function from the **dplyr** library the mean of all the values lying under each group made above.
-21. Script now writes the resulting data set in a properly formatted csv file in the current working directory. In the end script removes all the variables in the working space to make it clean.
-22.  Both the csv files could be read using the command **read.csv(“file name”)**
+21. Script now writes the resulting data set in a properly formatted txt file in the current working directory. In the end script removes all the variables in the working space to make it clean.
+22.  Both the txt files could be read using the command **read.csv(“file name”, header=TRUE)**
 
