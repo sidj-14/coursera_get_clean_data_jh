@@ -5,15 +5,15 @@ This file explains the working of the script run_analysis.R.
 ##run_analysis.R – Explanation
 ***
 The run_analysis.R script aims to perform the following tasks as per the project guidelines:
-..1. STEP 1 - Merges the training and the test sets to create one data set
-..2. STEP 2 - Extracts only the measurements on the mean and standard deviation for each measurement
-..3. STEP 3 - Uses descriptive activity names to name the activities in the data set
-..4. STEP 4 - Appropriately labels the data set with descriptive names
-..5. STEP 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+STEP 1 - Merges the training and the test sets to create one data set
+STEP 2 - Extracts only the measurements on the mean and standard deviation for each measurement
+STEP 3 - Uses descriptive activity names to name the activities in the data set
+STEP 4 - Appropriately labels the data set with descriptive names
+STEP 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 The script has comments for easier understanding of how the code works. The flow is explained as follows:
 
-..1.In the start any dependent libraries are loaded. We use the library “dplyr” for the following functions used later in the script:
+1.In the start any dependent libraries are loaded. We use the library “dplyr” for the following functions used later in the script:
 	..*mutate()
 	..*group_by()
 	..*summarize_each()
